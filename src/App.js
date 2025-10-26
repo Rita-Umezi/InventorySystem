@@ -7,6 +7,7 @@ import Orders from './Component/Orders';
 import './App.css';
 
 function App() {
+  console.log('App: render start');
   return (
     <div className="App">
       <Routes>
