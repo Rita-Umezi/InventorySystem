@@ -2,7 +2,7 @@
   "name": "inventory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Rita-Umezi.github.io/Inventorysystem",
+  "homepage": "https://rita-Umezi.github.io/Inventorysystem",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
