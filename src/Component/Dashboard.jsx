@@ -5,11 +5,16 @@ export default function Dashboard() {
 
   const navStyle = {
     display: 'flex',
-    gap: '20px',
-    padding: '12px',
+    gap: '32px',
     background: '#f5f5f5',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
+    borderBottom: '1px solid #e0e0e0',
+    position: 'relative',
+    boxSizing: 'border-box',
+    width: '100%',
+    margin: 0,
+    padding: '16px 40px',
   };
 
   const linkStyle = (path) => ({
@@ -22,8 +27,29 @@ export default function Dashboard() {
   });
 
   return (
-    <div>
-      <nav style={navStyle}>
+    <div style={{ 
+        margin: 0, 
+        padding: 0, 
+        overflow: 'hidden', 
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%'
+      }}>
+      <nav style={{
+        ...navStyle,
+        margin: 0,
+        padding: '16px 0',
+        width: '100%',
+        left: 0,
+        top: 0,
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center'
+      }}>
+        <div style={{ fontWeight: 'bold', fontSize: '20px', color: '#333' }}>
+    NORDAN<span style={{ fontSize: '12px', verticalAlign: 'super' }}>™</span>
+  </div>
         <Link to="/" style={linkStyle('/')}>
           <i className="fas fa-house"></i>
           Dashboard
@@ -40,7 +66,13 @@ export default function Dashboard() {
         </Link>
       </nav>
 
-      <main style={{ padding: 16, minHeight: 'calc(100vh - 140px)' }}>
+      <main style={{ 
+        padding: '20px 24px', 
+        minHeight: 'calc(100vh - 140px)',
+        position: 'relative',
+        width: '100%',
+        left: 0
+      }}>
         <Outlet />
       </main>
       <footer
