@@ -140,7 +140,7 @@ const orders = [
       </div>
    
         <div style={{ padding: '20px' }}>
-      <h2>Orders Dashboard</h2>
+      <h2>Orders</h2>
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <thead>
           <tr>
