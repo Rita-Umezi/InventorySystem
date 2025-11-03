@@ -25,17 +25,17 @@ export default function Dashboard() {
     <div>
       <nav style={navStyle}>
         <Link to="/" style={linkStyle('/')}>
-          <i className="fa-solid fa-house"></i>
+          <i className="fas fa-house"></i>
           Dashboard
         </Link>
 
         <Link to="/inventory" style={linkStyle('/inventory')}>
-          <i className="fa-solid fa-box"></i>
+          <i className="fas fa-box"></i>
           Inventory
         </Link>
 
         <Link to="/orders" style={linkStyle('/orders')}>
-         <i className="fa-solid fa-clipboard-list"></i>
+         <i className="fas fa-clipboard-list"></i>
           Orders
         </Link>
       </nav>
